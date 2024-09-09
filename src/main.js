@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const formularioImpuestos = document.querySelector('#formularioImpuestos')
 
         formularioImpuestos.addEventListener("submit",(event)=>{
-            
             event.preventDefault();
 
             if(isNaN(montoBrutoAnual.value) || isNaN (deducciones.value)){
@@ -68,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cliente.setImpuesto(impuesto);
             
             const resultado = document.querySelector('#resultado')
-            resultado.innerHTML = `<h2>Impuesto total: ${cliente.calcularImpuestos()}</h2>`
+            resultado.innerHTML = `<h2>Impuestos total: ${cliente.calcularImpuestos()}</h2>`
 
         })
     })
