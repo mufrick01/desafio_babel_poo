@@ -11,4 +11,7 @@ npm init
 ```
 npx babel src/ -d dist/ --config-file ./babel.config.json
 ```
-4. ver resultados en carpeta `dist`
+4. ejecutar archivo `mainConsola.js` en entorno `node` desde carpeta `dist`
+```
+node dist/mainConsola.js
+```
